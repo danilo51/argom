@@ -1,0 +1,190 @@
+/*
+Common CSS
+*/
+html, body {
+    height: 100%;
+}
+.page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -180px; 
+}
+  
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.page-wrap:after {
+    height: 180px; 
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-size: 15px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-weight: 400;
+    margin:0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 0 0 15px;
+}
+
+a{
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.content{
+    width: 1190px; 
+    margin: 0 auto;
+}
+
+
+/*
+Top Header
+*/
+.top_header_area{background: #f2f2f2; padding: 8px 0; overflow: hidden;}
+
+.top_header_area .inner_header{overflow: hidden;}
+
+.top_header_area .lang_area{float: left; width: 50%;}
+.top_header_area .lang_area ul{margin: 0p; padding: 0; list-style: none; text-align: left;} 
+.top_header_area .lang_area ul li{display: inline-block; margin-right: 5px;}
+.top_header_area .lang_area ul li a{background: #d2ddd2; color:#6a3144; width: 35px; height: 28px; display: block;text-align: center; padding-top: 5px; border-radius: 50%;}
+.top_header_area .lang_area ul li a:hover{background: #1f4592; color:white;}
+
+.top_header_area .contact_area{float: right; width: 50%;}
+.top_header_area .contact_area .container{margin: 0p; padding: 0; text-align: right;}
+
+.top_header_area .contact_area .container .telephone{margin:0; text-align: left; display: inline-block;} 
+
+.top_header_area .contact_area .container .telephone .photo{margin:0px; height: 47px; width: 30px; display: inline-block;  vertical-align: top; }
+.top_header_area .contact_area .container .telephone .photo i{margin-left:7px; margin-top:16px; color:#1f4592;}
+.top_header_area .contact_area .container .telephone .text_item{margin-top:6; height: 47px; display: inline-block;}
+.top_header_area .contact_area .container .telephone .text_item p{margin: 0px; padding: 0px;font-size: 0.9em;}
+
+.top_header_area .contact_area .container .email{margin:0; text-align: left; display: inline-block;} 
+
+.top_header_area .contact_area .container .email .photo{margin:0px; height: 47px; width: 30px; display: inline-block;  vertical-align: top; }
+.top_header_area .contact_area .container .email .photo i{margin-left:7px; margin-top:16px; color:#1f4592;}
+.top_header_area .contact_area .container .email .text_item{margin-top:6; height: 47px; display: inline-block;}
+.top_header_area .contact_area .container .email .text_item p{margin: 0px; padding: 0px;font-size: 0.9em;}
+
+/*
+Logo area
+*/
+.logo_area{width: 220px; max-width: 100%; height: 68px;; margin: 25px auto; text-align: center;}
+
+
+
+/*Logo area menu*/
+.menu_area{padding: 20px; overflow: hidden;}
+.menu_area .inner_header{overflow: hidden;}
+
+.menu_area .container_logo{margin:0px; padding:0px; float: left;}
+.menu_area .container_logo img{margin:0; height:52px; vertical-align: middle}
+
+.menu_area .container_menu{float: right;  background:#1f4592; height: 52px;}
+/*.menu_area .main_menu{float: right;  background:#1f4592; height: 52px;}*/
+.menu_area .main_menu ul{margin: 0px; padding: 0; list-style: none; text-align: right;}
+.menu_area .main_menu ul li{display: inline-block; }
+.active{background: #29abe2;}
+.menu_area .main_menu ul li a{color: #fff; font-size: 14px; font-weight: 600; text-transform: uppercase;display: block;padding:15px 20px;}
+.menu_area .main_menu ul li a:hover{background: #1f4592;}
+
+
+/*dropdown menu*/
+.menu_area .main_menu ul li ul{display: none;background: #29abe2 none repeat scroll 0 0; position: absolute; text-align:left; width: 250px;  top:151px;}
+.menu_area .main_menu ul li:hover ul  {display: block;}
+
+.menu_area .main_menu ul li ul li {display: block;}
+.menu_area .main_menu ul li ul li a {color: #fff;}
+
+/*.menu_area .main_menu ul li a:hover{background: #29abe2;}*/
+.menu_area .main_menu ul li:first-child{ width: 250px; text-align: left;}
+/*.menu_area .main_menu ul li a:first-child:hover{background:#1f4592;}*/
+
+/*
+Search area
+*/
+.search_area{padding: 20px; overflow: hidden;}
+.search_area .inner_header{overflow: hidden;}
+
+.container_form{text-align:center;margin-top:10px; background: #f2f2f2; padding: 20px;};
+.search_area{padding: 20px; overflow: hidden;}
+
+.container_form h1{color: #1f4592;}
+.container_form form input[type="text"]{background: #889bc2; border: 0;padding: 14px; color:#fff;margin-bottom: 20px;} 
+.button_form{background: #f15a24; border:none; padding: 15px 40px; color: #fff; font-size: 16px; font-weight: bold;cursor: pointer;}
+
+.select_form{background: #889bc2; border: 0;padding: 13px; color:#fff;margin-bottom: 20px; width: 169px;}
+
+::placeholder {color:  #fff;opacity: 1;} /* Firefox */
+:-ms-input-placeholder {color: fff;}/* Internet Explorer 10-11 */
+::-ms-input-placeholder {color: fff;}/* Microsoft Edge */
+
+/*
+section categories
+*/
+.categories_area{padding: 0px; overflow: hidden;}
+.categories_area .inner_service{overflow: hidden;}
+
+.categories_area .main_categories{width: 100%; overflow: hidden; margin-top: 10px;}
+.categories_area .main_categories .child_category{width: auto; padding:2px; text-align: center; float:left; position: relative; margin-right: 4px;} 
+.categories_area .main_categories .child_category img{vertical-align: middle;}
+.categories_area .main_categories .child_category p{margin-top:1; padding-top:0;}
+
+/*
+Footer
+*/
+
+.footer_area{background: #1f4592; padding: 8px 0; overflow: hidden; color:#fff;height: 180px; width:100%; bottom: 0; position: relative;}
+.footer_area .inner_footer{overflow: hidden;}
+
+.footer_area .contact_footer{float: left; width: 50%;}
+.footer_area .contact_footer .container{margin: 10px; padding: 0px; text-align: right;}
+.footer_area .contact_footer .container .text_item{text-align: center;width: 224px;float:right;}
+
+.footer_area .email_footer{float: right; width: 50%;}
+.footer_area .email_footer .container{margin: 10px; padding: 0px; text-align: right;}
+.footer_area .email_footer .container .text_item{text-align: center;width: 224px;float:left;}
+
+.footer_area .legal{padding:20px; text-align: center; color:#fbb03b; width: 100%; overflow: hidden;}
+.footer_area .legal a{color: #fbb03b}
+
+/*
+table list products
+*/
+
+.btn {background-color: #db9644; border: none; color: white; padding: 12px 16px; font-size: 16px; cursor: pointer;}
+
+.btn:hover { background-color: #ffa51e;}
+
+#product_list{ width: 100%; margin: 0; padding: 0; border-collapse: collapse; border-spacing: 0;}
+
+#product_list tr td img{vertical-align: middle;}
+
+#product_list th{background: #e6e6e6;}
+
+tr.border_bottom td {border-bottom: 1px solid #cccccc;}
+
+td.center{text-align: center;}
+
+td.right{text-align: right;}
+
+td.img{padding:15px 5px;}
+
+#product_list tr td input[type="text"]{background: #fff; border: 1px solid #cccccc;padding: 13px; color:#333333; ont-size: 15px;text-align: right;width:95px;} 
+
+

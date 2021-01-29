@@ -1,0 +1,11 @@
+/*
+Tablet layout
+*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .content{width: 98%;}
+    .menu_area .container_logo img {
+        margin-bottom: 3px;
+    }
+
+}
